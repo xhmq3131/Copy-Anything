@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Copy Anything DNA",
+  "type": "object",
+  "required": ["type", "source", "summary", "structure", "patterns", "rebuild_plan", "verification", "metadata"],
+  "properties": {
+    "type": {"type": "string"},
+    "source": {"type": "string"},
+    "summary": {"type": "string"},
+    "structure": {"type": "object"},
+    "patterns": {"type": "array", "items": {"type": "string"}},
+    "rebuild_plan": {"type": "array", "items": {"type": "string"}},
+    "verification": {"type": "array", "items": {"type": "string"}},
+    "metadata": {"type": "object"}
+  },
+  "additionalProperties": false
+}
